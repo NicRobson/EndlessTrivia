@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(188, 255, 255);
+}
+
+button {
+    font-size: 30px;
+    border: 1px;
+}
+
+#score {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding-top: 5%;
+    font-size: 75px;
+}
+
+#questionText {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#buttons {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.answers {
+    font-size: 10px;
+}
+
+#newButton {
+    padding-top: 25px;
+    text-align: center;
+}
