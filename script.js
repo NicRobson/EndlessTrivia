@@ -91,7 +91,7 @@ function CheckAnswer(index) {
 
     if (possibleAnswers[index].correct) {
 
-        $('body').css("background", "green");
+        $('body').css("background", "rgb(255, 255, 255)");
         score++;
         
         if ( score > best )
