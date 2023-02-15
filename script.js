@@ -1,9 +1,7 @@
 
 var possibleAnswers = [];
 var score = 0;
-var best = 0;
-
-var difficulty = "easy"
+var best = localStorage.getItem("best") ? localStorage.getItem("best") : 0;
 
 $(document).ready( function() {
     NewQuestion();
@@ -24,7 +22,7 @@ function NewQuestion() {
     // Display the score
     $("#score").html("Streak: " + score + " Best: " + best);
 
-    var url = 'https://the-trivia-api.com/api/questions?limit=1&difficulty=' + difficulty;
+    var url = 'https://the-trivia-api.com/api/questions?limit=1';
 
     // fetch the new question
     fetch(url, {
@@ -97,7 +95,8 @@ function CheckAnswer(index) {
         score++;
         
         if ( score > best )
-        best = score;
+            localStorage.setItem("best", score);
+            best = score;
         
         $("#score").html("Streak: " + score + " Best: " + best);
         
