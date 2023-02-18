@@ -13,11 +13,13 @@ function NewQuestion() {
 
     // Determine difficulty
     let difficulty = "easy"; // default
-    if ( score < 15 ) {
+    if ( score > 15 ) {
         difficulty = "hard";
-    } else if (score < 8 ) {
+    } else if (score > 8 ) {
         difficulty = "medium";
     }
+
+    console.log(difficulty);
 
     var url = 'https://the-trivia-api.com/api/questions?limit=1&difficulty=' + difficulty;
 
