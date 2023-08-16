@@ -35,7 +35,8 @@ body {
 }
 
 #newButton {
-    padding-top: 25px;
+    display: none;
     text-align: center;
     font-size: 50px;
+    margin-bottom: 15%
 }

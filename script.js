@@ -63,6 +63,7 @@ function NewQuestion() {
         // reactive the answers
         $(`.answers`).css("background-color", '');
         $('.answers').prop('disabled', false);
+        $("#newButton").hide();
         
     })
     .catch(function(error) {
@@ -98,6 +99,8 @@ function CheckAnswer(index) {
         score = 0;
         $("#score").html("Streak: " + score + " Best: " + best);
     }    
+
+    $("#newButton").show();
 }
 
 $(document).ready( function() {
