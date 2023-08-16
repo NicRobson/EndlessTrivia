@@ -2,11 +2,6 @@ body {
     background-color: rgb(188, 255, 255);
 }
 
-button {
-    font-size: 30px;
-    border: 1px;
-}
-
 #score {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -24,17 +19,23 @@ button {
     padding-right: 10%;
 }
 
-#buttons {
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+#buttons button {
+    color: white;
+    cursor: pointer;
+    width: 50%; 
+    display: block;
+    align-content: center;
+    font-size: 25px;
+    margin: 15px auto 0 auto;
 }
 
-.answers {
-    font-size: 10px;
+.answer button:not(:last-child) {
+    border-bottom: none; 
+    margin-top: 25px;
 }
 
 #newButton {
     padding-top: 25px;
     text-align: center;
+    font-size: 50px;
 }
